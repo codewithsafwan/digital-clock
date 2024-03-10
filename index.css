@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #C1C8D3;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+.clock {
+    width: 100vh;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #061727;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    font-size: 28px;
+    color: transparent;
+    text-shadow: 0 0 1px #CC3433, 0 0 1px #EC7C45;
+}
+
+.analog {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    border: 3px solid #77524C; 
+}
+
+.hand {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 2px;
+    height: 40%;
+    background-color: white;
+    transform-origin: bottom;
+}
+
+#hourHand {
+    position: absolute;
+    height: 30%;
+    top: 20%;
+}
+
+#secondHand {
+    width: 2px;
+    background-color: red;
+}
+
+.line {
+    width: 2px;
+    height: 10px;
+    background: linear-gradient(0deg, #CC3433 15%, #EC7C45 93%);
+    position: relative;
+    top: 14px;
+}
+
+.top {
+    position: absolute;
+    left: 50%;
+}
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: rotate(90deg);
+}
+
+.down {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+}
+
+.right {
+    position: absolute;
+    top: 50%;
+    right: 90%;
+    transform: rotate(90deg);
+}
+
+.digital {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background: linear-gradient(0deg, #CC3433 15%, #EC7C45 93%);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.digital p {
+    position: relative;
+    bottom: -40px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    text-align: center;
+}
+
+#ampm {
+    position: relative;
+    top : 0;   
+}
